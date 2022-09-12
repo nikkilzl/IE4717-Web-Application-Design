@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheet.css">
+<style> 
+	table { margin: auto;
+			width: auto;
+			color: #663300;
+	}
+	td {padding: 5px; 
+	}
+	#audioimage { float: left;
+				padding: 20px 30px;
+	}
+	#audioplay {margin-left: 40px;
+	}
+	#audiocontent { padding-top: 25px;
+					padding-bottom: 10px;
+	}
+</style>
+<!-- styling to center the table in the middle of the music page-->
+<!-- audioimage, audioplay, and audiocontent are for aligning the image, play control and description of music respectively-->
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<img src="javajamlogo.png" alt="logo" width="500" height="90"> 
+	</header>
+	<div class="leftcolumn">
+		<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+		</ul>
+		</nav>
+	</div>
+	<div class="rightcolumn">
+		<div class="content">
+		<h2>Music at JavaJam</h2>
+		<p>The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for
+		some music you won't want to miss.
+		</p><br>
+		<table>
+			<tr>
+				<td colspan="2" bgcolor="#E1D2B3"><strong>JANUARY</strong></td>
+			</tr> <!-- colspan for title of month and bgcolor because the rows are 1 and 4 respectively so not possible to use nth-of-type-->
+			<tr>
+				<td rowspan="2"> <!-- similar to home (index) page -- using rowspan to have image span across 2 rwos-->
+					<img src="tommisch.png" width="90" height="90" id="audioimage">
+				</td>
+				<td id="audiocontent"> 
+					Introducing Tom Misch with his jazz, soulful music.<br>
+					<strong>CDs are now available.</strong>
+				</td>
+			<tr>
+				<td>
+					<audio controls id="audioplay">
+						<source src="runsthroughme.mp3" type="audio/mp3">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" bgcolor="#E1D2B3"><strong>FEBRUARY</strong></td>
+			</tr> <!-- colspan for title of month and bgcolor because the rows are 1 and 4 respectively so not possible to use nth-of-type-->
+			<tr>
+				<td rowspan="2">
+					<img src="vansire.jpg" width="90" height="90" id="audioimage">
+				</td>
+				<td id="audiocontent"> 
+					Vansire is back with more chill indie pop!<br>
+					<strong>CDs are now available.</strong>
+				</td>
+			<tr>
+				<td>
+					<audio controls id="audioplay">
+						<source src="nosebleedseats.mp3" type="audio/mp3">
+				</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	<footer>
+		<small><i>Copyright &copy; 2022 JavaJam Coffee House<br>
+		<a href="mailto:Nikki@Lim.com">Nikki@Lim.com</i></small>
+	</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheet.css">
+<style> 
+form { color: #663300;
+		padding: 5px 40px;
+	}
+label { float: left;
+		clear: left;
+		display: block;
+		width: 100px;
+		padding-right: 20px;
+		margin-top: 10px;
+		text-align: right;
+		}
+input, textarea {display: block;
+				margin-top: 10px;	
+}
+</style>
+<!-- styling to center the table in the middle of the music page-->
+<!-- audioimage, audioplay, and audiocontent are for aligning the image, play control and description of music respectively-->
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<img src="javajamlogo.png" alt="logo" width="500" height="90">  
+	</header>
+	<div class="leftcolumn">
+		<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+		</ul>
+		</nav>
+	</div>
+	<div class="rightcolumn">
+		<div class="content">
+		<h2>Jobs at JavaJam</h2>
+		<p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are
+		marked with an asterisk *
+		</p>
+		<form name="jobForm" action="show_post.php" method="post">
+            <label>*Name:</label>
+				<input type="text" name="CustName" id="CustName" required="1" placeholder="Enter your name here"onchange="validateName()"><br>
+            <label>*E-mail:</label>
+				<input type="email" name="email" id="email" required="1" placeholder="Enter your Email-ID here"><br>
+            <label>Start date:</label>
+				<input type="date" name="date" id="date"><br>
+            <label>*Experience:</label>
+				<textarea name="Exp" id="Exp" rows="4" cols="40" required="1" placeholder="Enter your past experience here"></textarea><br>
+				<input type="reset" value="Clear">
+				<input type="submit" value="Apply Now">
+        </form>
+		</div>
+	</div>
+	<footer>
+		<small><i>Copyright &copy; 2022 JavaJam Coffee House<br>
+		<a href="mailto:Nikki@Lim.com">Nikki@Lim.com</i></small>
+	</footer>
+</div>
+</body>
+</html>
